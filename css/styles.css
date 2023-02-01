@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  max-width: 1440px;
+  padding: 81px 24px;
+  background-color: #0e1323;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(255px, 100%), 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.wrap-author {
+  background-color: #1c204b;
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 15px;
+}
+
+.author {
+  background-color: #5747ea;
+  border-radius: 15px;
+  padding: 37px 32px 80px 32px;
+}
+
+.author img {
+  border: 3px solid #ffffff;
+  width: 78px;
+  border-radius: 50%;
+}
+
+.report {
+  line-height: 17.78px;
+  color: #bbc0ff;
+  display: block;
+  margin-top: 43px;
+  margin-bottom: 3px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 47.4px;
+}
+
+.timeframes ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 26px 32px 32px 32px;
+  gap: 21px;
+  font-size: 18px;
+  line-height: 21.33px;
+  color: #7078c9;
+}
+
+.timeframes ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.timeframes ul li.active {
+  color: #fff;
+}
+
+.back-stats {
+  position: relative;
+  border-radius: 15px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.back-stats img {
+  position: absolute;
+}
+
+.wrap-stats {
+  position: relative;
+  height: 245px;
+}
+
+.wrap-stats:nth-child(2) .back-stats {
+  background-color: #ff8b64;
+}
+
+.wrap-stats:nth-child(2) .back-stats img {
+  right: 17.42px;
+  top: -10.91px;
+}
+
+.wrap-stats:nth-child(3) .back-stats {
+  background-color: #55c2e6;
+}
+
+.wrap-stats:nth-child(3) .back-stats img {
+  right: 11px;
+  top: -14.4px;
+}
+
+.wrap-stats:nth-child(4) .back-stats {
+  background-color: #ff5e7d;
+}
+
+.wrap-stats:nth-child(4) .back-stats img {
+  right: 17.07px;
+  top: -6.05px;
+}
+
+.wrap-stats:nth-child(5) .back-stats {
+  background-color: #4bcf82;
+}
+
+.wrap-stats:nth-child(5) .back-stats img {
+  right: 17.62px;
+  top: -0.42px;
+}
+
+.wrap-stats:nth-child(6) .back-stats {
+  background-color: #7335d2;
+}
+
+.wrap-stats:nth-child(6) .back-stats img {
+  right: 13.48px;
+  top: -15px;
+}
+
+.wrap-stats:nth-child(7) .back-stats {
+  background-color: #f1c75b;
+}
+
+.wrap-stats:nth-child(7) .back-stats img {
+  right: 19.91px;
+  top: -12px;
+}
+
+.stats {
+  position: absolute;
+  background-color: #1c204b;
+  height: 200px;
+  width: 100%;
+  padding: 29px 30px 32px 30px;
+  border-radius: 15px;
+  top: 45px;
+}
+
+.stats:hover {
+  background-color: #33397a;
+  cursor: pointer;
+}
+
+.title-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 21.33px;
+}
+
+.dots {
+  display: flex;
+  gap: 3px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dot {
+  background-color: #bbc0ff;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+
+.dots:hover .dot {
+  background-color: #fff;
+}
+
+.hours {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 66.36px;
+  color: #fff;
+  display: block;
+  margin: 24px 0 8px 0;
+}
+
+.details {
+  line-height: 17.78px;
+  color: #bbc0ff;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .container {
+    gap: 24px;
+  }
+
+  .author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 35px 32px 34px 32px;
+  }
+
+  .author img {
+    width: 64px;
+  }
+
+  .report {
+    margin: 0 0 4px 0;
+  }
+
+  .name {
+    font-size: 24px;
+    line-height: 28.44px;
+  }
+
+  .timeframes ul {
+    display: flex;
+    flex-direction: row;
+    padding: 24px 32px 25px 32px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-stats {
+    margin-bottom: 8px;
+  }
+
+  .back-stats {
+    height: 120px;
+  }
+
+  .wrap-stats {
+    height: 160px;
+  }
+
+  .stats {
+    height: 122px;
+    padding: 28px 24px;
+    top: 38px;
+  }
+
+  .stats-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hours {
+    font-size: 32px;
+    line-height: 37.92px;
+    margin: 0;
+  }
+}
